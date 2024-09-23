@@ -234,7 +234,7 @@ section {
   }
   form input, form textarea {
     padding: 15px;
-    /* border: 1px solid #001F3F; */
+    border: 1px solid #001F3F;
     border-radius: 8px;
     color: #001F3F;
     font-size: 18px;
