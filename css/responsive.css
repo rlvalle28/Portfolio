@@ -1,0 +1,86 @@
+@media (max-width: 2560px) {
+    #mobile-flex button, #mobile-menu a {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1104px) {
+    .hero {
+        padding-top: 100px;
+    }
+    .typewriter {
+        align-items: center;
+        width: 80%;
+    }
+    .hero .icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    li {
+        justify-content: space-between;
+    }
+    nav a {
+        display: none !important;
+    }
+    #mobile-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        /* overflow: hidden; */
+    }
+    #mobile-flex button {
+        display: block !important;
+        font-size: 18px;
+        background: #000;
+        color: #fff;
+    }
+    #mobile-flex a {
+        display: block !important;
+        font-size: 18px;
+        color: #fff;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        top: 150%;
+        left: 0;
+        background: #000;
+        padding: 20px;
+        width: 100%;
+      }
+      
+      .menu.active {
+        display: block;
+      }
+      #mobile-menu a {
+        color: #fff !important;
+      }
+    .hero img {
+        height: 400px;
+    }
+}
+@media (max-width: 500px) {
+    .typewriter h1 {
+        border-right: none;
+        white-space: wrap;
+        width: 100%;
+        animation: none !important;
+        text-align: center;
+    }
+    
+
+    .hero img {
+        height: 300px;
+    }
+    .proj-images img {
+        width: 100%;
+    }
+    .form-col {
+        width: 100%;
+        padding: 0 20px;
+    }
+}

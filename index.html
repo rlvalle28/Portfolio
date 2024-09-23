@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+     <!-- Font Awesome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+    <nav id="navbar" class="navbar">
+        <ul>
+            <li>
+                <div id="mobile-flex">
+                    <button onclick="burgerToggle()"><i id="mobile-burger" class="fas fa-hamburger"></i></button>
+                    <div id="mobile-menu" class="menu">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <img src="images/logo_png.png" alt="" height="35px">
+                </div>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button onclick="toggleBackground()">
+                    <i class="fas fa-adjust"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+<body>
+    <section class="hero" id="home">
+        <div class="main-container">
+            <div class="container-row">
+                <div class="typewriter">
+                    <h1>Hi! I'm Ralph Laurence Valle</h1>
+                    <p>Frontend/Wordpress Developer</p>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/rencevalle.28" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://github.com/rlvalle28" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="resume/Ralph Laurence Valle.pdf" download>
+                        <button class="dl-cv">Download Resume</button>
+                    </a>
+                    
+                </div>
+                <img src="images/image_rb.png" alt="">
+            </div>
+        </div>
+    </section>
+
+        <section class="about" id="about">
+            <div class="main-container">
+                <div class="container-column">
+                    <h1>About Me</h1>
+                    <p>Graduated with a Bachelor of Science in Information Technology from Holy Cross College Pampanga, I'm passionate about building responsive, user-friendly websites. He continues to improve his frontend development skills and contributes to modern web projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="main-container">
+                <div class="container-column">
+                    <h1>My Projects</h1>
+                    <div class="proj-images">
+                        <div id="image">
+                            <img src="images/p1.jpeg" alt="">
+                            <a href="https://riftofheroes.com/programming/joint-property-ventures/" target="_blank">Joint Property Ventures</a>
+                        </div>
+                        <div id="image">
+                            <img src="images/p2.jpg" alt="">
+                            <a href="https://riftofheroes.com/programming/nomadplan/" target="_blank">NomadPlan</a>
+                        </div>
+                        <div id="image">
+                            <img src="images/p3.jpeg" alt="">
+                            <a href="https://riftofheroes.com/programming/energi-solutions/" target="_blank">Energi Solutions</a>
+                        </div>
+                        <div id="image">
+                            <img src="images/p4.jpeg" alt="">
+                            <a href="https://riftofheroes.com/programming/dhruvinternational/" target="_blank">Dhruv Realty</a>
+                        </div>
+                        <div id="image">
+                            <img src="images/p5.jpg" alt="">
+                            <a href="https://riftofheroes.com/programming/mend-human/" target="_blank">Mend Human</a>
+                        </div>
+                        <div id="image">
+                            <img src="images/p6.jpg" alt="">
+                            <a href="https://dreamy-melomakarona-d0b35c.netlify.app/" target="_blank">LAB READY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="main-container">
+                <div class="container-column">
+                    <h1>Contact</h1>
+                    <form id="contact-form">
+                        <div class="form-col">
+                          <label for="name" class="form-label">Name</label>
+                          <input type="text" id="name" name="name" class="form-control" aria-describedby="emailHelp" required>
+                          <label for="email" class="form-label">Email Address</label>
+                          <input type="email" id="email" name="email" class="form-control" required>
+                          <label for="message">Message:</label><br>
+                          <textarea rows="7" id="message" name="message" required style="resize:none;"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </section>
+
+    
+    <!-- Include the EmailJS SDK -->
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script src="js/script.js"></script>
+</body>
+</html>
